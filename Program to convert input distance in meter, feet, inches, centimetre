@@ -1,0 +1,18 @@
+/* C Program to convert input distance in meter, feet, inches, centimetre */
+#include <stdio.h>
+int main()
+{
+int distance;
+float meter, feet, inches, centimetre;
+printf("Enter the distance [in Kilometers]: ");
+scanf("%d", & distance);
+meter = distance * 1000;
+feet = distance * 3280.84;
+inches = distance * 39370.1;
+centimetre = distance * 100000;
+printf("Meter = %f\n", meter);
+printf("Feet = %f\n", feet);
+printf("Inches = %f\n", inches);
+printf("Centimetres = %f\n", centimetre);
+return 0;
+}
